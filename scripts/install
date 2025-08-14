@@ -48,7 +48,7 @@ yunohost service add "$app" --description="A short description of the app" --log
 ynh_script_progression "Installing the app..."
 
 pushd "$install_dir"
- 	ynh_hide_warnings ynh_exec_as_app npm install cloudcmd -g --force
+ 	ynh_hide_warnings npm install cloudcmd -g --force
 popd
 
 #=================================================
